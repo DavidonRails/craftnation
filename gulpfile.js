@@ -66,7 +66,8 @@ gulp.task('connect', function () {
 });
     
 gulp.task('open', function () {
-    return gulp.src('demo/index.html').pipe(open({ uri: 'http://localhost:3000/demo/index.html'}));
+    //return gulp.src('demo/index.html').pipe(open({ uri: 'http://localhost:3000/demo/index.html'}));
+    return gulp.src('demo/index.html').pipe(open({ uri: 'http://craftnation.herokuapp.com:3000/demo/index.html'}));
 });
 
 gulp.task('watch', function() {
