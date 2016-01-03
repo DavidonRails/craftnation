@@ -69,7 +69,7 @@ gulp.task('open', function () {
     //return gulp.src('demo/index.html').pipe(open({ uri: 'http://localhost:3000/demo/index.html'}));
     return gulp.src('demo/index.html').pipe(open({ uri: 'http://craftnation.herokuapp.com:3000/demo/index.html'}));
 });
-
+/*
 gulp.task('serveprod', function() {
   connect.server({
     root: [path.root],
@@ -77,7 +77,7 @@ gulp.task('serveprod', function() {
     livereload: false
   });
 });
-
+*/
 gulp.task('watch', function() {
     gulp.watch(path.source + '*/*.*', ['build']);
 });
