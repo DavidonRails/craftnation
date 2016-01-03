@@ -91,4 +91,4 @@ gulp.task('watch-demo', function() {
 });
 
 gulp.task('default', ['build', 'watch']);
-gulp.task('demo', ['connect', 'build', 'watch-demo', 'open']);
+gulp.task('demo', ['connect', 'build', 'watch-demo', 'serveprod']);

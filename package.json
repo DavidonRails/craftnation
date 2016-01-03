@@ -13,6 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start" : "gulp demo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
