@@ -61,19 +61,19 @@ gulp.task('connect', function () {
     return connect.server({
         root: [ path.root ],
         livereload: true,
-        port:'3000'
+        port: process.env.PORT || 3000
     });
 });
     
 gulp.task('open', function () {
     //return gulp.src('demo/index.html').pipe(open({ uri: 'http://localhost:3000/demo/index.html'}));
-    return gulp.src('demo/index.html').pipe(open({ uri: 'http://craftnation.herokuapp.com:5000/demo/index.html'}));
+    return gulp.src('demo/index.html').pipe(open({ uri: 'http://craftnation.herokuapp.com:3000/demo/index.html'}));
 });
 
 gulp.task('serveprod', function() {
   return connect.server({
     root: [path.root],
-    port: process.env.PORT || 5000, // localhost:5000
+    port: process.env.PORT || 3000, // localhost:3000
     livereload: false
   });
 });
